@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Vacation Itineraries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Location</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>Travel time</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Need vaccins</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vacation_itineraries.each do |vacation_itinerary| %>
+      <tr>
+        <td><%= vacation_itinerary.location %></td>
+        <td><%= vacation_itinerary.start_date %></td>
+        <td><%= vacation_itinerary.end_date %></td>
+        <td><%= vacation_itinerary.travel_time %></td>
+        <td><%= vacation_itinerary.name %></td>
+        <td><%= vacation_itinerary.description %></td>
+        <td><%= vacation_itinerary.need_vaccins %></td>
+        <td><%= link_to 'Show', vacation_itinerary %></td>
+        <td><%= link_to 'Edit', edit_vacation_itinerary_path(vacation_itinerary) %></td>
+        <td><%= link_to 'Destroy', vacation_itinerary, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Vacation Itinerary', new_vacation_itinerary_path %>

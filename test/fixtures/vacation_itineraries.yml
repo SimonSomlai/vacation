@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  location: MyString
+  start_date: 2017-03-27
+  end_date: 2017-03-27
+  travel_time: 1
+  name: MyString
+  description: MyText
+  need_vaccins: false
+
+two:
+  location: MyString
+  start_date: 2017-03-27
+  end_date: 2017-03-27
+  travel_time: 1
+  name: MyString
+  description: MyText
+  need_vaccins: false

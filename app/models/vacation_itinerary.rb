@@ -1,0 +1,2 @@
+class VacationItinerary < ApplicationRecord
+end

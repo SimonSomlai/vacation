@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @vacation_itinerary.location %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @vacation_itinerary.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @vacation_itinerary.end_date %>
+</p>
+
+<p>
+  <strong>Travel time:</strong>
+  <%= @vacation_itinerary.travel_time %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @vacation_itinerary.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @vacation_itinerary.description %>
+</p>
+
+<p>
+  <strong>Need vaccins:</strong>
+  <%= @vacation_itinerary.need_vaccins %>
+</p>
+
+<%= link_to 'Edit', edit_vacation_itinerary_path(@vacation_itinerary) %> |
+<%= link_to 'Back', vacation_itineraries_path %>
